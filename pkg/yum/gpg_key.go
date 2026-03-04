@@ -15,7 +15,7 @@ func FetchGPGKey(ctx context.Context, url string, client *http.Client) (*string,
 	if err != nil {
 		return nil, 0, fmt.Errorf("error creating request: %w", err)
 	}
-	resp, err := client.Do(req)
+	resp, err := client.Do(req) // #nosec G704
 	if err != nil {
 		return nil, 0, err
 	}
