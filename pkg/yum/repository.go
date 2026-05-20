@@ -18,7 +18,7 @@ import (
 )
 
 // Max uncompressed XML file supported
-const DefaultMaxXmlSize = int64(1024 * 1024 * 1024) // 1 GB
+const DefaultMaxXmlSize = int64(1024 * 1024 * 1024 * 3 / 2) // 1.5 GB
 
 // Package metadata of a given package
 type Package struct {
